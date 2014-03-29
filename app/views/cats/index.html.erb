@@ -1,0 +1,12 @@
+
+<ul>
+	<% @cats.each do |cat| %>
+		<li><%= link_to cat.name, cat_url(cat) %></li>
+	<% end %>
+</ul>
+
+
+<p>
+	<%= link_to "Request Cat", new_cat_rental_request_url, :method => :get%>
+
+</p>
